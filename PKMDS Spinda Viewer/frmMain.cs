@@ -48,5 +48,15 @@ namespace PKMDS_Spinda_Viewer
         {
             numPID.Value = GetRandom();
         }
+
+        private void importToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void exportToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

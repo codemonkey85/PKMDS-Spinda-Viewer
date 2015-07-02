@@ -46,6 +46,7 @@ namespace PKMDS_Spinda_Viewer
         }
         private void frmMain_Load(object sender, EventArgs e)
         {
+            msMain.Visible = false;
             numPID.Value = GetRandom();
         }
 

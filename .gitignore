@@ -189,3 +189,5 @@ FakesAssemblies/
 
 *.DS_STORE
 *.lock
+*.vsidx
+*.bin

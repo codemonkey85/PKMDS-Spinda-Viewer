@@ -1,33 +1,33 @@
-﻿namespace PKMDS_Spinda_Viewer
+﻿namespace PKMDS_Spinda_Viewer_WinForms;
+
+partial class MainForm
 {
-    partial class frmMain
+    /// <summary>
+    ///  Required designer variable.
+    /// </summary>
+    private System.ComponentModel.IContainer components = null;
+
+    /// <summary>
+    ///  Clean up any resources being used.
+    /// </summary>
+    /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+    protected override void Dispose(bool disposing)
     {
-        /// <summary>
-        /// Required designer variable.
-        /// </summary>
-        private System.ComponentModel.IContainer components = null;
-
-        /// <summary>
-        /// Clean up any resources being used.
-        /// </summary>
-        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
-        protected override void Dispose(bool disposing)
+        if (disposing && (components != null))
         {
-            if (disposing && (components != null))
-            {
-                components.Dispose();
-            }
-            base.Dispose(disposing);
+            components.Dispose();
         }
+        base.Dispose(disposing);
+    }
 
-        #region Windows Form Designer generated code
+    #region Windows Form Designer generated code
 
-        /// <summary>
-        /// Required method for Designer support - do not modify
-        /// the contents of this method with the code editor.
-        /// </summary>
-        private void InitializeComponent()
-        {
+    /// <summary>
+    ///  Required method for Designer support - do not modify
+    ///  the contents of this method with the code editor.
+    /// </summary>
+    private void InitializeComponent()
+    {
             this.msMain = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.importToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -46,11 +46,13 @@
             // 
             // msMain
             // 
+            this.msMain.ImageScalingSize = new System.Drawing.Size(32, 32);
             this.msMain.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.fileToolStripMenuItem});
             this.msMain.Location = new System.Drawing.Point(0, 0);
             this.msMain.Name = "msMain";
-            this.msMain.Size = new System.Drawing.Size(324, 24);
+            this.msMain.Padding = new System.Windows.Forms.Padding(13, 5, 0, 5);
+            this.msMain.Size = new System.Drawing.Size(510, 46);
             this.msMain.TabIndex = 0;
             this.msMain.Text = "menuStrip1";
             // 
@@ -60,53 +62,57 @@
             this.importToolStripMenuItem,
             this.exportToolStripMenuItem});
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
-            this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
+            this.fileToolStripMenuItem.Size = new System.Drawing.Size(71, 36);
             this.fileToolStripMenuItem.Text = "File";
             // 
             // importToolStripMenuItem
             // 
             this.importToolStripMenuItem.Name = "importToolStripMenuItem";
-            this.importToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.importToolStripMenuItem.Size = new System.Drawing.Size(233, 44);
             this.importToolStripMenuItem.Text = "Import...";
             this.importToolStripMenuItem.Click += new System.EventHandler(this.importToolStripMenuItem_Click);
             // 
             // exportToolStripMenuItem
             // 
             this.exportToolStripMenuItem.Name = "exportToolStripMenuItem";
-            this.exportToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.exportToolStripMenuItem.Size = new System.Drawing.Size(233, 44);
             this.exportToolStripMenuItem.Text = "Export...";
             this.exportToolStripMenuItem.Click += new System.EventHandler(this.exportToolStripMenuItem_Click);
             // 
             // numPID
             // 
-            this.numPID.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.numPID.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.numPID.Location = new System.Drawing.Point(43, 204);
+            this.numPID.Location = new System.Drawing.Point(93, 547);
+            this.numPID.Margin = new System.Windows.Forms.Padding(6, 7, 6, 7);
             this.numPID.Maximum = new decimal(new int[] {
             -1,
             0,
             0,
             0});
             this.numPID.Name = "numPID";
-            this.numPID.Size = new System.Drawing.Size(218, 20);
+            this.numPID.Size = new System.Drawing.Size(402, 39);
             this.numPID.TabIndex = 2;
             this.numPID.ValueChanged += new System.EventHandler(this.numPID_ValueChanged);
             // 
             // lblPID
             // 
-            this.lblPID.AutoSize = true;
-            this.lblPID.Location = new System.Drawing.Point(12, 206);
+            this.lblPID.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.lblPID.Location = new System.Drawing.Point(15, 549);
+            this.lblPID.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lblPID.Name = "lblPID";
-            this.lblPID.Size = new System.Drawing.Size(25, 13);
+            this.lblPID.Size = new System.Drawing.Size(66, 41);
             this.lblPID.TabIndex = 1;
             this.lblPID.Text = "PID";
+            this.lblPID.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // pbSpriteNormal
             // 
-            this.pbSpriteNormal.Location = new System.Drawing.Point(12, 27);
+            this.pbSpriteNormal.Location = new System.Drawing.Point(15, 53);
+            this.pbSpriteNormal.Margin = new System.Windows.Forms.Padding(6, 7, 6, 7);
             this.pbSpriteNormal.Name = "pbSpriteNormal";
-            this.pbSpriteNormal.Size = new System.Drawing.Size(147, 171);
-            this.pbSpriteNormal.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pbSpriteNormal.Size = new System.Drawing.Size(480, 480);
+            this.pbSpriteNormal.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbSpriteNormal.TabIndex = 4;
             this.pbSpriteNormal.TabStop = false;
             // 
@@ -114,9 +120,10 @@
             // 
             this.chkHex.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.chkHex.AutoSize = true;
-            this.chkHex.Location = new System.Drawing.Point(267, 205);
+            this.chkHex.Location = new System.Drawing.Point(1181, 505);
+            this.chkHex.Margin = new System.Windows.Forms.Padding(6, 7, 6, 7);
             this.chkHex.Name = "chkHex";
-            this.chkHex.Size = new System.Drawing.Size(45, 17);
+            this.chkHex.Size = new System.Drawing.Size(87, 36);
             this.chkHex.TabIndex = 3;
             this.chkHex.Text = "Hex";
             this.chkHex.UseVisualStyleBackColor = true;
@@ -125,31 +132,33 @@
             // pbSpriteShiny
             // 
             this.pbSpriteShiny.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.pbSpriteShiny.Location = new System.Drawing.Point(165, 27);
+            this.pbSpriteShiny.Location = new System.Drawing.Point(950, 66);
+            this.pbSpriteShiny.Margin = new System.Windows.Forms.Padding(6, 7, 6, 7);
             this.pbSpriteShiny.Name = "pbSpriteShiny";
-            this.pbSpriteShiny.Size = new System.Drawing.Size(147, 171);
+            this.pbSpriteShiny.Size = new System.Drawing.Size(318, 421);
             this.pbSpriteShiny.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pbSpriteShiny.TabIndex = 6;
             this.pbSpriteShiny.TabStop = false;
             // 
             // btnRandom
             // 
-            this.btnRandom.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.btnRandom.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnRandom.Location = new System.Drawing.Point(12, 230);
+            this.btnRandom.Location = new System.Drawing.Point(15, 600);
+            this.btnRandom.Margin = new System.Windows.Forms.Padding(6, 7, 6, 7);
             this.btnRandom.Name = "btnRandom";
-            this.btnRandom.Size = new System.Drawing.Size(300, 23);
+            this.btnRandom.Size = new System.Drawing.Size(480, 57);
             this.btnRandom.TabIndex = 4;
             this.btnRandom.Text = "Random!";
             this.btnRandom.UseVisualStyleBackColor = true;
             this.btnRandom.Click += new System.EventHandler(this.btnRandom_Click);
             // 
-            // frmMain
+            // MainForm
             // 
             this.AcceptButton = this.btnRandom;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 32F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(324, 265);
+            this.ClientSize = new System.Drawing.Size(510, 673);
             this.Controls.Add(this.btnRandom);
             this.Controls.Add(this.pbSpriteShiny);
             this.Controls.Add(this.chkHex);
@@ -159,8 +168,9 @@
             this.Controls.Add(this.msMain);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MainMenuStrip = this.msMain;
+            this.Margin = new System.Windows.Forms.Padding(6, 7, 6, 7);
             this.MaximizeBox = false;
-            this.Name = "frmMain";
+            this.Name = "MainForm";
             this.Text = "PKMDS Spinda Viewer";
             this.Load += new System.EventHandler(this.frmMain_Load);
             this.msMain.ResumeLayout(false);
@@ -171,20 +181,18 @@
             this.ResumeLayout(false);
             this.PerformLayout();
 
-        }
-
-        #endregion
-
-        private System.Windows.Forms.MenuStrip msMain;
-        private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem importToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem exportToolStripMenuItem;
-        private System.Windows.Forms.NumericUpDown numPID;
-        private System.Windows.Forms.Label lblPID;
-        private System.Windows.Forms.PictureBox pbSpriteNormal;
-        private System.Windows.Forms.CheckBox chkHex;
-        private System.Windows.Forms.PictureBox pbSpriteShiny;
-        private System.Windows.Forms.Button btnRandom;
     }
-}
 
+    #endregion
+
+    private System.Windows.Forms.MenuStrip msMain;
+    private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem;
+    private System.Windows.Forms.ToolStripMenuItem importToolStripMenuItem;
+    private System.Windows.Forms.ToolStripMenuItem exportToolStripMenuItem;
+    private System.Windows.Forms.NumericUpDown numPID;
+    private System.Windows.Forms.Label lblPID;
+    private System.Windows.Forms.PictureBox pbSpriteNormal;
+    private System.Windows.Forms.CheckBox chkHex;
+    private System.Windows.Forms.PictureBox pbSpriteShiny;
+    private System.Windows.Forms.Button btnRandom;
+}

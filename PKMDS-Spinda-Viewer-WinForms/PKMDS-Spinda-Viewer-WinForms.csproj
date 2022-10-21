@@ -2,9 +2,10 @@
 
 	<PropertyGroup>
 		<OutputType>WinExe</OutputType>
-		<TargetFramework>net6.0-windows</TargetFramework>
+		<TargetFramework>net7.0-windows</TargetFramework>
 		<RootNamespace>PKMDS_Spinda_Viewer_WinForms</RootNamespace>
 		<Nullable>enable</Nullable>
+		<LangVersion>preview</LangVersion>
 		<UseWindowsForms>true</UseWindowsForms>
 		<ImplicitUsings>enable</ImplicitUsings>
 	</PropertyGroup>

@@ -20,15 +20,17 @@ public partial class MainForm : Form
 
     private uint GetRandom()
     {
-        var rnd = new Random(DateTime.Now.Millisecond);
-        var rand = (uint)rnd.Next(int.MinValue, int.MaxValue);
-        return rand;
+        var r = new Random(DateTime.Now.Millisecond);
+        var bytes = new byte[4];
+        r.NextBytes(bytes);
+        return BitConverter.ToUInt32(bytes);
     }
 
     private void btnRandom_Click(object sender, EventArgs e) => numPID.Value = GetRandom();
 
     private void frmMain_Load(object sender, EventArgs e)
     {
+        MinimumSize = Size;
         msMain.Visible = false;
         numPID.Value = GetRandom();
     }

@@ -52,7 +52,7 @@ partial class MainForm
             this.msMain.Location = new System.Drawing.Point(0, 0);
             this.msMain.Name = "msMain";
             this.msMain.Padding = new System.Windows.Forms.Padding(13, 5, 0, 5);
-            this.msMain.Size = new System.Drawing.Size(510, 46);
+            this.msMain.Size = new System.Drawing.Size(610, 46);
             this.msMain.TabIndex = 0;
             this.msMain.Text = "menuStrip1";
             // 
@@ -68,14 +68,14 @@ partial class MainForm
             // importToolStripMenuItem
             // 
             this.importToolStripMenuItem.Name = "importToolStripMenuItem";
-            this.importToolStripMenuItem.Size = new System.Drawing.Size(233, 44);
+            this.importToolStripMenuItem.Size = new System.Drawing.Size(359, 44);
             this.importToolStripMenuItem.Text = "Import...";
             this.importToolStripMenuItem.Click += new System.EventHandler(this.importToolStripMenuItem_Click);
             // 
             // exportToolStripMenuItem
             // 
             this.exportToolStripMenuItem.Name = "exportToolStripMenuItem";
-            this.exportToolStripMenuItem.Size = new System.Drawing.Size(233, 44);
+            this.exportToolStripMenuItem.Size = new System.Drawing.Size(359, 44);
             this.exportToolStripMenuItem.Text = "Export...";
             this.exportToolStripMenuItem.Click += new System.EventHandler(this.exportToolStripMenuItem_Click);
             // 
@@ -83,7 +83,7 @@ partial class MainForm
             // 
             this.numPID.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.numPID.Location = new System.Drawing.Point(93, 547);
+            this.numPID.Location = new System.Drawing.Point(93, 347);
             this.numPID.Margin = new System.Windows.Forms.Padding(6, 7, 6, 7);
             this.numPID.Maximum = new decimal(new int[] {
             -1,
@@ -91,14 +91,14 @@ partial class MainForm
             0,
             0});
             this.numPID.Name = "numPID";
-            this.numPID.Size = new System.Drawing.Size(402, 39);
+            this.numPID.Size = new System.Drawing.Size(403, 39);
             this.numPID.TabIndex = 2;
             this.numPID.ValueChanged += new System.EventHandler(this.numPID_ValueChanged);
             // 
             // lblPID
             // 
             this.lblPID.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.lblPID.Location = new System.Drawing.Point(15, 549);
+            this.lblPID.Location = new System.Drawing.Point(15, 349);
             this.lblPID.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lblPID.Name = "lblPID";
             this.lblPID.Size = new System.Drawing.Size(66, 41);
@@ -111,16 +111,16 @@ partial class MainForm
             this.pbSpriteNormal.Location = new System.Drawing.Point(15, 53);
             this.pbSpriteNormal.Margin = new System.Windows.Forms.Padding(6, 7, 6, 7);
             this.pbSpriteNormal.Name = "pbSpriteNormal";
-            this.pbSpriteNormal.Size = new System.Drawing.Size(480, 480);
+            this.pbSpriteNormal.Size = new System.Drawing.Size(240, 240);
             this.pbSpriteNormal.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbSpriteNormal.TabIndex = 4;
             this.pbSpriteNormal.TabStop = false;
             // 
             // chkHex
             // 
-            this.chkHex.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.chkHex.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.chkHex.AutoSize = true;
-            this.chkHex.Location = new System.Drawing.Point(1181, 505);
+            this.chkHex.Location = new System.Drawing.Point(508, 348);
             this.chkHex.Margin = new System.Windows.Forms.Padding(6, 7, 6, 7);
             this.chkHex.Name = "chkHex";
             this.chkHex.Size = new System.Drawing.Size(87, 36);
@@ -131,12 +131,11 @@ partial class MainForm
             // 
             // pbSpriteShiny
             // 
-            this.pbSpriteShiny.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.pbSpriteShiny.Location = new System.Drawing.Point(950, 66);
+            this.pbSpriteShiny.Location = new System.Drawing.Point(355, 53);
             this.pbSpriteShiny.Margin = new System.Windows.Forms.Padding(6, 7, 6, 7);
             this.pbSpriteShiny.Name = "pbSpriteShiny";
-            this.pbSpriteShiny.Size = new System.Drawing.Size(318, 421);
-            this.pbSpriteShiny.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pbSpriteShiny.Size = new System.Drawing.Size(240, 240);
+            this.pbSpriteShiny.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbSpriteShiny.TabIndex = 6;
             this.pbSpriteShiny.TabStop = false;
             // 
@@ -144,10 +143,10 @@ partial class MainForm
             // 
             this.btnRandom.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnRandom.Location = new System.Drawing.Point(15, 600);
+            this.btnRandom.Location = new System.Drawing.Point(15, 400);
             this.btnRandom.Margin = new System.Windows.Forms.Padding(6, 7, 6, 7);
             this.btnRandom.Name = "btnRandom";
-            this.btnRandom.Size = new System.Drawing.Size(480, 57);
+            this.btnRandom.Size = new System.Drawing.Size(580, 57);
             this.btnRandom.TabIndex = 4;
             this.btnRandom.Text = "Random!";
             this.btnRandom.UseVisualStyleBackColor = true;
@@ -158,7 +157,7 @@ partial class MainForm
             this.AcceptButton = this.btnRandom;
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 32F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(510, 673);
+            this.ClientSize = new System.Drawing.Size(610, 473);
             this.Controls.Add(this.btnRandom);
             this.Controls.Add(this.pbSpriteShiny);
             this.Controls.Add(this.chkHex);

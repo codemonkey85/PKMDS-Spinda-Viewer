@@ -1,5 +1,3 @@
-using PKMDS_CS;
-
 namespace PKMDS_Spinda_Viewer_WinForms;
 
 public partial class MainForm : Form
@@ -18,7 +16,7 @@ public partial class MainForm : Form
 
     private void chkHex_CheckedChanged(object sender, EventArgs e) => numPID.Hexadecimal = chkHex.Checked;
 
-    private uint GetRandom()
+    private static uint GetRandom()
     {
         var r = new Random(DateTime.Now.Millisecond);
         var bytes = new byte[4];
